@@ -2,6 +2,9 @@ import React, { createContext, useContext } from 'react'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Userform from './components/Userform'
+import { Route, Routes } from 'react-router-dom'
+import Card from './components/Card'
+import About from './components/About'
 
 //useContext hook
 /*
@@ -18,11 +21,16 @@ function App()
 {
   return (
     <div>
-  {/* <userData.Provider value="teknowell">
-      <Show/>
-    </userData.Provider> */}
     <Nav/>
-    <Home/>
+  <Routes>
+    <Route path='/' element={<Userform/>} />
+    <Route path='/card' element={<Card/>} />
+    <Route path='/about' element={<About/>} />
+
+
+  </Routes>
+
+
     </div>
   )
 }
