@@ -5,6 +5,8 @@ import Userform from './components/Userform'
 import { Route, Routes } from 'react-router-dom'
 import Card from './components/Card'
 import About from './components/About'
+import GetApiData from './components/GetApiData'
+import SaveApiData from './components/SaveApiData'
 
 //useContext hook
 /*
@@ -26,6 +28,8 @@ function App()
     <Route path='/' element={<Userform/>} />
     <Route path='/card' element={<Card/>} />
     <Route path='/about' element={<About/>} />
+    <Route path='/getapidata' element={<GetApiData/>} />
+    <Route path='/saveapidata' element={<SaveApiData/>} />
 
 
   </Routes>
