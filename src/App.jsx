@@ -7,7 +7,6 @@ import Card from './components/Card'
 import About from './components/About'
 import GetApiData from './components/GetApiData'
 import SaveApiData from './components/SaveApiData'
-
 //useContext hook
 /*
    const userData=createContext();
@@ -30,8 +29,7 @@ function App()
     <Route path='/about' element={<About/>} />
     <Route path='/getapidata' element={<GetApiData/>} />
     <Route path='/saveapidata' element={<SaveApiData/>} />
-
-
+    
   </Routes>
 
 

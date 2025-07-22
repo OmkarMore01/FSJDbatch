@@ -11,6 +11,7 @@ function Nav() {
       <Link className='text-decoration-none text-dark' to='/' >Home</Link>
        <Link className='text-decoration-none text-dark' to='/getapidata' >GetApiData</Link>
        <Link className='text-decoration-none text-dark' to='/saveapidata' >SaveApiData</Link>
+    
     </nav>
     
     </div>

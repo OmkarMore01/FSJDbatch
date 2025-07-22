@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 function SaveApiData() {
   const [userData, setUserData] = useState({
-    userId: 0,
-    id: 0,
+    userId: '',
+    id: '',
     title: '',
     body: ''
   });
@@ -18,18 +18,19 @@ function SaveApiData() {
     try
     {
        const response=await
-        fetch('https://jsonplaceholder.typicode.com/posts',userData,
+        fetch('https://jsonplaceholder.typicode.com/posts',
             {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                     
                 },
+                body: JSON.stringify(userData)
                 
             }
         )
-        const result= response.JSON()
-        console.log("Data Saved Successsfulyyy",result)
+        const result= response.json()
+        alert("Data Saved Successsfulyyy",result)
     }
     catch(error)
     {   
@@ -52,7 +53,7 @@ function SaveApiData() {
           <label className="form-label">User ID</label>
           <input type="text" className="form-control" name='userId'  value={userData.userId} onChange={handleChange}/>
         </div>
-    <h1>Hii ia ma </h1>
+    
         <div className="mb-3">
           <label className="form-label">ID</label>
           <input type="text" className="form-control" name='id'  value={userData.id} onChange={handleChange}/>
