@@ -8,6 +8,7 @@ import About from './components/About'
 import GetApiData from './components/GetApiData'
 import SaveApiData from './components/SaveApiData'
 import UserCrud from './components/UserCrud'
+import PasswordGenerator from './components/PasswordGenerator'
 //useContext hook
 /*
    const userData=createContext();
@@ -31,6 +32,7 @@ function App()
     <Route path='/getapidata' element={<GetApiData/>} />
     <Route path='/saveapidata' element={<SaveApiData/>} />
     <Route path='/usercrud' element={<UserCrud/>}/>
+    <Route path='/pass' element={<PasswordGenerator/>}/>
   </Routes>
 
 
